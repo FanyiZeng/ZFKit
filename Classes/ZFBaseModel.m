@@ -9,8 +9,6 @@
 #import "ZFBaseModel.h"
 
 
-#import "TPBaseModel.h"
-
 @implementation ZFBaseModel
 
 - (instancetype)initWithDic:(NSDictionary *)dic

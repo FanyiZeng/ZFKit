@@ -7,9 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
-#import <Foundation/Foundation.h>
 #import <YYModel.h>
 #import <objc/runtime.h>
 @interface ZFBaseModel : NSObject<NSCoding>
