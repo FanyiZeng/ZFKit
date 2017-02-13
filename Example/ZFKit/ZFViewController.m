@@ -7,7 +7,7 @@
 //
 
 #import "ZFViewController.h"
-
+#import "ZFTestModel.h"
 @interface ZFViewController ()
 
 @end
@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    ZFTestModel *model = [[ZFTestModel alloc]init];
+    [model setValuesForKeysWithDictionary:@{@"name":@"ZFKit",@"age":@22}];
+    NSLog(@"%@",model);
 }
 
 - (void)didReceiveMemoryWarning

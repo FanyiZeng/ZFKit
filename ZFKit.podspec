@@ -1,42 +1,24 @@
-#
-# Be sure to run `pod lib lint ZFKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'ZFKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZFKit.'
+  s.name         = 'ZFKit'
+  s.summary      = 'High performance model framework for iOS/OSX.'
+  s.version      = '1.0.1'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.authors      = { 'FanyiZeng' => 'FanyiZeng@Yeah.Net' }
+  s.social_media_url = 'http://www.jianshu.com/u/e89709cae2ad'
+  s.homepage     = 'https://github.com/FanyiZeng/ZFKit'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.7'
+  s.watchos.deployment_target = '2.0'
+  s.tvos.deployment_target = '9.0'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/13072785111/ZFKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '13072785111' => 'fanyizeng@yeah.net' }
-  s.source           = { :git => 'https://github.com/13072785111/ZFKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'ZFKit/Classes/**/*'
+  s.source       = { :git => 'https://github.com/FanyiZeng/ZFKit.git', :tag => s.version.to_s }
   
-  # s.resource_bundles = {
-  #   'ZFKit' => ['ZFKit/Assets/*.png']
-  # }
+  s.requires_arc = true
+  s.source_files = 'ZFKit/Classes/*.{h,m}'
+  s.public_header_files = 'ZFKit/Classes/*.{h}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+ s.dependency 'YYModel'
+  s.frameworks = 'Foundation', 'CoreFoundation'
+
 end
