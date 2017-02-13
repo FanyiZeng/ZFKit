@@ -8,9 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/FanyiZeng/ZFKit'
 
   s.ios.deployment_target = '6.0'
-  s.osx.deployment_target = '10.7'
-  s.watchos.deployment_target = '2.0'
-  s.tvos.deployment_target = '9.0'
+
 
   s.source       = { :git => 'https://github.com/FanyiZeng/ZFKit.git', :tag => s.version.to_s }
   
