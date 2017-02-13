@@ -22,7 +22,7 @@ pod "ZFKit"
 
 ## Author
 
-13072785111, fanyizeng@yeah.net
+fanyizeng@yeah.net
 
 ## License
 

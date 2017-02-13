@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/FanyiZeng/ZFKit.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'ZFKit/Classes/*.{h,m}'
+  s.source_files = 'ZFKit/*.{h,m}'
   s.public_header_files = 'ZFKit/Classes/*.{h}'
 
- s.dependency 'YYModel'
+  s.dependency 'YYModel'
   s.frameworks = 'Foundation', 'CoreFoundation'
 
 end

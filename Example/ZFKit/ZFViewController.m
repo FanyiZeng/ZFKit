@@ -7,7 +7,7 @@
 //
 
 #import "ZFViewController.h"
-#import "ZFTestModel.h"
+#import "ZFKit.h"
 @interface ZFViewController ()
 
 @end
@@ -17,9 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ZFTestModel *model = [[ZFTestModel alloc]init];
-    [model setValuesForKeysWithDictionary:@{@"name":@"ZFKit",@"age":@22}];
+    ZFTestModel *model = [[ZFTestModel alloc]initWithDic:@{@"name":@"ZFKit",@"age":@22}];
+    NSArray *modelArr = [ZFTestModel cz_objectsWithArray:@[@{@"name":@"ZFKit",@"age":@22},
+                                       @{@"name":@"ZFKit",@"age":@22},
+                                       @{@"name":@"ZFKit",@"age":@22},
+                                       @{@"name":@"ZFKit",@"age":@22},
+                                       @{@"name":@"ZFKit",@"age":@22},
+                                       @{@"name":@"ZFKit",@"age":@22},]];
     NSLog(@"%@",model);
+    NSLog(@"%@",modelArr);
 }
 
 - (void)didReceiveMemoryWarning
