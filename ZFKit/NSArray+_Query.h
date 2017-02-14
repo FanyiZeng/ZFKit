@@ -42,4 +42,11 @@
 - (NSUInteger)getIndexWithKey:(NSString *)Key lessThanMiddleValue:(double)value;
 
 
+
+/**
+ 倒序数组
+ */
+- (NSArray *)reverse;
+
+
 @end

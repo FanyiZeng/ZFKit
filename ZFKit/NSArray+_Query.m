@@ -59,4 +59,9 @@
     return [self getIndexWithKey:Key lessThanMiddleValue:value] + 1;
 }
 
+- (NSArray *)reverse
+{
+    return self.reverseObjectEnumerator.allObjects;
+}
+
 @end
