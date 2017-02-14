@@ -8,6 +8,7 @@
 
 #import "ZFViewController.h"
 #import "ZFKit.h"
+#import "ZFTestModel.h"
 @interface ZFViewController ()
 
 @end
@@ -26,6 +27,14 @@
                                        @{@"name":@"ZFKit",@"age":@22},]];
     NSLog(@"%@",model);
     NSLog(@"%@",modelArr);
+    
+    NSLog(@"View的宽度 %f",self.view.width);
+    NSLog(@"屏幕的高度  %f",[UIScreen cz_screenHeight]);
+    NSLog(@"Bundle 路径 :%@",[NSString bundlePath]);
+    NSLog(@"Document 路径 :%@",[NSString documentPath]);
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

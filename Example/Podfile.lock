@@ -1,0 +1,19 @@
+PODS:
+  - YYModel (1.0.4)
+  - ZFKit (1.2):
+    - YYModel
+
+DEPENDENCIES:
+  - ZFKit (from `../`)
+
+EXTERNAL SOURCES:
+  ZFKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  ZFKit: 3c567029155103b5c521afcd884812259a6e673e
+
+PODFILE CHECKSUM: 73224bb38b7de34446664e48e0e09244aff98ce3
+
+COCOAPODS: 1.2.0

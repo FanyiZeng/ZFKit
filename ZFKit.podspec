@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   s.source_files = 'ZFKit/*.{h,m}'
-  s.public_header_files = 'ZFKit/Classes/*.{h}'
+  s.public_header_files = 'ZFKit/*.{h}'
 
   s.dependency 'YYModel'
   s.frameworks = 'Foundation', 'CoreFoundation'
