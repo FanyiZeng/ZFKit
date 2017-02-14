@@ -24,5 +24,6 @@
 #import "NSString+CZBase64.h"
 #import "UIView+WP.h"
 #import "NSArray+_Query.h"
+#import "UILabel+Width.h"
 
 #endif /* ZFKit_h */
