@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ZFKit'
   s.summary      = 'High performance model framework for iOS/OSX.'
-  s.version      = '1.3.2'
+  s.version      = '1.3.3'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'FanyiZeng' => 'FanyiZeng@Yeah.Net' }
   s.social_media_url = 'http://www.jianshu.com/u/e89709cae2ad'
